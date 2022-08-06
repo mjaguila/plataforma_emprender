@@ -1,0 +1,731 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.verde{color: #c6ce5cff}
+.naranja{color: #f3b81cf7}
+.aguamarina{color: #61c6c9ff}
+.gris{color: #b3b3b3ff}
+.grisoscuro{color: rgb(68, 67, 67)}
+
+/* Etiquetas de títulos, subtítulos, referencias... */
+a{
+    font-size: 14px; 
+    font-weight: 500;
+    color: #c6ce5cff;
+}
+a:hover{
+    color: #b3b3b3ff;
+}
+p{
+    color:rgb(68, 67, 67);
+}
+.p-chica{
+    font-size: 14px; 
+    font-weight: 500;
+    color: rgb(68, 67, 67);
+}
+.title {
+    text-align:center;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+.title h2 {
+	font-size: 50px;
+	line-height: 55px;
+	color: #C6CE5C;
+	font-weight: 500;
+	text-transform: uppercase;
+    margin-bottom: 27px;
+    position: relative;
+    padding-bottom: 8px;
+}
+.title h2:after {
+	position: relative;
+    content: '';
+    top: 100%;
+    width: 110px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+    background:rgb(68, 67, 67);
+}
+
+@media (max-width: 992px) {
+    .title h2{
+        font-size: 40px;
+    }
+}
+.title h3 {
+	font-size: 30px;
+	line-height: 55px;
+	color: rgb(68, 67, 67);
+	font-weight: 500;
+	text-transform: uppercase;
+    position: relative;
+    padding-bottom: 2px;
+}
+.title h4 {
+	font-size: 35px;
+	line-height: 35px;
+	color: #b3b3b3ff;
+	font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.title-reducido {
+    text-align:center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.title-reducido h2 {
+	font-size: 50px;
+	line-height: 55px;
+	color: #C6CE5C;
+	font-weight: 500;
+	text-transform: uppercase;
+    margin-bottom: 7px;
+    position: relative;
+    padding-bottom: 4px;
+}
+.title-reducido h2:after {
+	position: relative;
+    content: '';
+    top: 100%;
+    width: 110px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+    background:rgb(68, 67, 67);
+}
+.title-reducido h3 {
+	font-size: 25px;
+	line-height: 40px;
+	color: #C6CE5C;
+	font-weight: 700;
+	text-transform: uppercase;
+    position: relative;
+    padding-bottom: 2px;
+}
+.title-reducido h6 {
+	font-size: 18px;
+	line-height: 20px;
+	color: #b3b3b3ff;
+	font-weight: 600;
+    margin-bottom: 2px;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.alert{
+    border-radius: 0px;
+}
+
+hr{
+    border: 25px;
+    width: 100%;
+    color: #bb0000;
+}
+
+/* Formularios */
+form label{
+    font-size: 14px; 
+    line-height: 15px;
+    color: rgb(68, 67, 67);
+    font-weight: 500;
+    position: relative;
+}
+.form-control{
+    font-size: 14px; 
+    line-height: 22px;
+    color: rgb(68, 67, 67);
+    font-weight: 500;
+    margin-bottom: 2px;
+    position: relative;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 0px;
+}
+
+/* Botones */
+.btn-emprender{
+    background-color: #61c6c9;
+    border: none;
+    border-radius: 0px;
+    color: white;
+    padding: 6px 10px 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+}
+.btn-emprender:hover{
+    color: white;
+    opacity: 0.5;
+}
+
+/* Slide */
+.carousel-inner{
+    align-self: center;
+}
+
+.carousel-item {
+    height: 80vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-item img{
+    height: auto;
+    width: 100%;
+    
+}
+.cuadro-post{
+    position: relative;
+
+}
+.bg1{
+    content:url("../img/slideHeader/1.png");
+}
+@media (max-width: 992px) {
+    .bg1{
+        content:url("../img/slideHeader/1Media.png");
+    }
+}
+.bg2{
+    content:url("../img/slideHeader/2.png");
+}
+@media (max-width: 992px) {
+    .bg2{
+        content:url("../img/slideHeader/2Media.png");
+    }
+}
+.bg3{
+    content:url("../img/slideHeader/3.png");
+}
+@media (max-width: 992px) {
+    .bg3{
+        content:url("../img/slideHeader/3Media.png");
+    }
+}
+.bg4{
+    content:url("../img/slideHeader/4.png");
+}
+@media (max-width: 992px) {
+    .bg4{
+        content:url("../img/slideHeader/4Media.png");
+    }
+}
+@media (max-width: 992px) {
+    .carousel-item {
+        height: 100%;
+    }
+}
+
+.carousel-caption {
+    bottom: 2rem;
+    z-index: 10;
+    background-color: white;
+    box-shadow: rgb(68, 67, 67) 0px 0px 10px 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* @media (max-width: 992px) {
+    .carousel-caption {
+        display: none;
+    }
+} */
+.carousel-caption h1{
+    font-family: 'Sofia', cursive;
+    color:#C6CE5C;
+    font-size: 50px;
+    text-align: center;
+}
+.carousel-caption h1::after{
+    position: relative;
+    content: '';
+    top: 100%;
+    width: 160px;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    background:#b3b3b3ff;    
+}
+
+@media (max-width: 992px) {
+    .carousel-caption h1{
+        font-size: 20px;
+    }
+    .carousel-caption h1::after{
+        width: 60px;  
+    }
+}
+
+.carousel-caption p{
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(68, 67, 67);
+    font-size: 12px;
+    font-style: italic;
+    padding-top: 10px;
+    text-align: center;
+}
+.carousel-caption .meta{
+    font-style: normal;
+    font-size: small;
+    text-align: center;
+    color: rgb(201, 194, 139);
+}
+.carousel-caption p a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(201, 194, 139);
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+}
+.carousel-caption p a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#b3b3b3ff;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+}
+#myCarousel .carousel-indicators button {
+    cursor: pointer;
+    background: #000000;
+    overflow: hidden;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    opacity: 0.6;
+    transition: 0.3s;
+    padding: 4px;
+    margin-top: 5px;
+}
+#myCarousel .carousel-indicators button.active {
+    opacity: 1;
+    background: #61c6c9ff;
+}
+
+/* Logo de la barra de navegación */
+#logoEmprender{
+    width: 200px;
+    height: auto;
+    padding-right: 20px;
+}
+
+/* Barra de redes sociales */
+.icon-bar {
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+.icon-bar a:hover {
+    background-color: rgb(68, 67, 67);
+}
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+.whatsapp {
+    background: #3f923d;
+    color: white;
+}
+.instagram {
+    background: #37517e;
+    color: white;
+}
+.youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.link-log{
+    padding: 10px;
+}
+
+/* Galería de fotos */
+.caja-foto{
+    margin-bottom: 40px;  
+    border: 1px solid;
+    border-color: #61c6c9ff;
+    border-width: 8px;
+    border-radius: 0px;
+    display: inline-block;  
+}
+@media (min-width: 992px) {
+    .foto-galeria {
+        z-index: 1;
+    }
+    .foto-galeria:hover {
+        opacity: 1;
+        transform: scale(1.5);
+        position: relative;
+        transition: 0.5s;
+        z-index: 100;
+    }
+}
+
+/* Concurso */
+#concurso{
+    background: #C6CE5C;  
+}
+#concurso .title h2{
+    color:rgb(255, 255, 255);
+}
+#abases{
+    color:#61c6c9ff;
+    font-size: 24px;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    font-family: 'Saira Stencil One', cursive;
+}
+#abases:hover{
+    color:rgb(245, 239, 189);
+    text-decoration: none;
+}
+
+#atrata{
+    color:rgb(182, 132, 189);
+    font-size: 24px;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    font-family: 'Saira Stencil One', cursive;
+}
+#atrata:hover{
+    color:rgb(245, 239, 189);
+    text-decoration: none;
+}
+
+/* Nosotros */
+.nosotros-bg {
+    background: #f1f7a3;
+}
+.nosotros-bg .white-bg {
+    background: #fff;
+    padding: 40px 20px;
+    box-shadow: #ddd 0px 0px 10px 3px;
+    margin-bottom: 5px;
+}
+.nosotros-bg .white-bg .caja-nosotros {
+	text-align: center;
+	padding: 1px;
+}
+.nosotros-bg .white-bg .caja-nosotros i {display:block;}
+.nosotros-bg .white-bg .caja-nosotros h3 {
+	font-size: 26px;
+    line-height: 21px;
+	color: rgb(68, 67, 67);
+	padding: 25px 0px 15px 0px ;
+    display: inline-block; 
+}
+
+.modal-nosotros{
+    font-size: small;
+    text-align:center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.modal-nosotros h3 {
+    line-height: 55px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 8px;    
+}
+.modal-nosotros h3:after {
+    position: relative;
+    content: '';
+    top: 100%;
+    width: 60px;
+    height: 6px;
+    display: block;
+    margin: 0 auto;
+    background:rgb(68, 67, 67);
+}
+
+/* Aliados */
+.img-aliados{
+    width: 60px;
+    padding-bottom: 20px;
+    opacity: 0.8;
+}
+.img-aliados:hover{
+    opacity: 1;
+}
+
+/* Emprendedores */
+.emprendedor .miembro {
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.emprendedor .miembro .pic {
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    border-radius: 50%;
+}
+
+.emprendedor .miembro .pic img {
+    transition: ease-in-out 0.3s;
+}
+
+.emprendedor .miembro:hover {
+    transform: translateY(-10px);
+}
+
+.emprendedor .miembro .miembro-info {
+    padding-left: 30px;
+}
+
+.emprendedor .miembro h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #b3b3b3ff;
+}
+
+.emprendedor .miembro span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+.emprendedor .miembro span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #cbd6e9;
+    bottom: 0;
+    left: 0;
+}
+
+.emprendedor .miembro p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+.emprendedor .miembro .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.emprendedor .miembro .social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #eff2f8;
+}
+
+.emprendedor .miembro .social a i {
+    color: #37517e;
+    font-size: 16px;
+    margin: 0 2px;
+}
+
+.emprendedor .miembro .social a:hover {
+    background: #47b2e4;
+}
+
+.emprendedor .miembro .social a:hover i {
+    color: #fff;
+}
+
+.emprendedor .miembro .social a + a {
+    margin-left: 8px;
+}
+
+/* Busca emprendedores */
+.bg-buscaEmprendedores{
+    background-image: url('../img/busca.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cuadro-busca{
+    width: 70%;
+    background-color: white;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tabla-busca-emprendedores{
+    font-size: small;
+}
+
+/* Contacto */
+.contacto-bg {
+    background: #61c6c9ff;
+}
+.contacto-bg .white-bg {
+    background: #fff;
+    padding: 40px 20px;
+    box-shadow: #ddd 0px 0px 10px 3px;
+    margin-bottom: 5px;
+}
+.items-ubicacion{
+    font-size: 12px; 
+    line-height: 25px;
+    color: rgb(68, 67, 67);
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #1b1b1b;
+}
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 0 auto;
+}
+.social li {
+    display: inline-block;
+    padding:0px 20px;
+}
+.social li a {
+    color: white;
+    width: 50px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 100%;
+    font-size: 18px;
+}
+.social li a:hover {
+    color: #f3b81cf7;
+}
+
+.copyright {
+    background-color: #c6ce5cff;
+    padding: 20px 0px;
+    margin-top:20px;
+}  
+.copyright p {
+    color: black;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}  
+ 
+/* Calendario */
+#contenido-evento{
+    border: none;
+    border-radius: 0px;
+    font-size: small;
+}
+#titulo-evento{
+    font-weight: bold;
+    font-size: 30px;
+    color: #c6ce5cff;
+    padding-bottom: 20px;
+}
+#descripcion-evento{
+    font-weight: normal;
+    line-height: 18px;
+}
+.cuadro-calendario{
+    width: 70%;
+    background-color: #f8f9fa;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+@media (max-width: 992px) {
+    .cuadro-calendario{
+        width: 90%;
+    }
+}
+#caja-evento{
+    border-style: none;
+    background-color: rgb(240, 240, 240);
+    border-color: rgb(216, 216, 216);
+    padding: 10px;
+    height: 100%;
+}
+#caja-evento h4{
+    font-size: small;
+    font-family: 'Righteous', cursive;
+    color:rgb(116, 114, 114);
+    padding-bottom: 5px;
+}
+#imagen-evento{
+    margin-top: 10px;
+    box-shadow: rgb(68, 67, 67) 0px 0px 10px 3px;
+}
+#imagen-evento:hover {
+    opacity: 0.8;
+    position: relative;
+    transition: 0.5s;
+}
+
+.card-pdf{
+    border-radius: 0px;
+}
+
+embed {  
+    width: 100%;
+    height: 225px;
+    overflow: hidden !important;
+}
+
+#inscripcion-concurso fieldset:not(:first-of-type) {
+    display: none;
+  }
+
+.subtitulos-concurso{
+    font-size: 20px;
+    color: #61c6c9ff;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

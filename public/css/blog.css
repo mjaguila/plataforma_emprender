@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(233, 233, 233);
+}
+
+header.masthead {
+    background: no-repeat center center;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+    background-image: url('../img/post.png');
+  }
+  header.masthead .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #b6b6b6;
+    opacity: 0.2;
+  }
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading {
+  color: rgb(54, 54, 54);
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+}
+header.masthead .page-heading,
+header.masthead .site-heading {
+  text-align: center;
+}
+header.masthead .page-heading h1,
+header.masthead .site-heading h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
+header.masthead .page-heading .subheading,
+header.masthead .site-heading .subheading {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+}
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading h1,
+  header.masthead .site-heading h1 {
+      font-size: 80px;
+      }
+}
+header.masthead .post-heading h1 {
+  font-size: 35px;
+}
+header.masthead .post-heading .meta,
+header.masthead .post-heading .subheading {
+  line-height: 1.1;
+  display: block;
+}
+header.masthead .post-heading .subheading {
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 10px 0 30px;
+}
+header.masthead .post-heading .meta {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+header.masthead .post-heading .meta a {
+  color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  header.masthead .post-heading h1 {
+    font-size: 55px;
+  }
+  header.masthead .post-heading .subheading {
+    font-size: 30px;
+  }
+}
+
+.container-post{
+  width: 60%;
+}
+
+.post-preview{
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.post-categoria{
+  color: #b3b3b3ff;
+  text-transform: uppercase;
+}
+
+.post-title{
+  color: #c6ce5cff;
+  text-transform: uppercase;
+}
+
+.post-meta{
+  color: #c6ce5cff;
+  font-size: small;
+  opacity: 0.7;
+}
+
+.post-contenido{
+  font-size: 14px;
+}
+
+.img-post{
+  background-color: rgb(68, 67, 67);
+  padding: 10px;
+  width: 100%;
+}
+
+  
